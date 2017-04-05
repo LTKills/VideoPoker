@@ -1,4 +1,4 @@
-
+package com.company;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -47,7 +47,6 @@ static BufferedReader br = new BufferedReader(isr);
 	 * @return  o valor double digitado pelo usuário. 
 	 * @throws IOException
 	 */
-
 	public static double leDouble() throws IOException {
 		String x = leString();
 		return Double.parseDouble(x);

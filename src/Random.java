@@ -1,7 +1,8 @@
+package com.company;
 import java.util.Calendar;
 
 /** 
- * gerador simples de números aleatórios.
+ * gerador simples de numeros aleatorios
  * @author delamaro
  *
  */
@@ -14,8 +15,8 @@ public class Random {
 	private long xi;
 
 /**
- * Retorna um número aleatório no intervalo (0,1[
- * @return o número gerado.
+ * Retorna um numero aleatorio no intervalo (0,1[
+ * @return o numero gerado.
  */
 	public double getRand() {
 		xi = (a + m * xi) % p;
@@ -25,8 +26,8 @@ public class Random {
 	
 	/**
 	 * Retorna um valor inteiro no intervalo [0,max]
-	 * @param max O valor limite para a geração do número inteiro
-	 * @return o número gerado
+	 * @param max O valor limite para a geracao do numero inteiro
+	 * @return o numero gerado
 	 */
 	public int getIntRand(int max)
 	{
@@ -35,10 +36,10 @@ public class Random {
 	}
 
 	/**
-	 * Permite alterar a semente de geração de números aleatórios. Supostamente deve ser chamada
-	 * antes de iniciar a geração, mas se for chamado a qualquer instante, reseta o valor
-	 * da semante
-	 * @param semente o valor da nova semente de geração
+	 * Permite alterar a semente de gerador de numeros aleatorios. Supostamente deve ser chamada
+	 * antes de iniciar a geracao, mas se for chamado a qualquer instante, reseta o valor
+	 * da semante.
+	 * @param semente o valor da nova semente de geracao
 	 */
 	public void setSemente(int semente) {
        xi = semente;		
@@ -54,7 +55,7 @@ public class Random {
 	}
 	
 	/**
-	 * Construtor que usa uma semente aleatória, adquerida usando o método Calendar.getTimeInMillis().
+	 * Construtor que usa uma semente aleatoria, adquerida usando o metodo Calendar.getTimeInMillis().
 	 */
 	public Random() {
 		xi = Calendar.getInstance().getTimeInMillis() % p;
