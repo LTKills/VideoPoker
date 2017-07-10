@@ -2,7 +2,7 @@
 
 Video Poker table game java implementation. This project is now very rustic,
 it has no graphical interface and tests have not been to thorough - thus there
-can be bugs in 
+can be bugs in the poits counting as well as repeating cards.
 
 
 ## What's next
